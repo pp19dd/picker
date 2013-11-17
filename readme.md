@@ -2,7 +2,7 @@ Are you writing a workhorse shell script in python?
 
 Why not curses?
 
-This class, using curses, lets a user select from a simple list of options. The return is a simple list of selected options, or False (for cancel).
+This class, using curses, lets a user select from a simple list of options. The return is a simple list of selected options, or False (for cancel). And, for the OCD in all of us, it preserves terminal window contents after exiting.
 
 ![picker example](http://pp19dd.com/wp-content/uploads/2013/11/picker3.png "picker example")
 
@@ -33,3 +33,10 @@ else:
 If the user hits cancels, the routine returns a ```False``` - otherwise, you get a simple list:
 
 ```['.autofsck', '.autorelabel', 'bin/', 'boot/', 'cgroup/']```
+
+The return, being a simple list, allows for a fairly readable logic:
+
+```python
+if "cgroup/" in opts:
+	print "cgroup is done for!"
+```
