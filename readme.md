@@ -1,6 +1,4 @@
-Are you writing a workhorse shell script in python?
-
-Why not curses?
+Are you writing a workhorse shell script in python? Why not curses?
 
 This class, using curses, lets a user select from a simple list of options. The return is a simple list of selected options, or False (for cancel). And, for the OCD in all of us, it preserves terminal window contents after exiting.
 
@@ -30,7 +28,7 @@ else:
     print opts
 ```
 
-If the user hits cancels, the routine returns a ```False``` - otherwise, you get a simple list:
+If the user hits cancel, the routine returns a ```False``` - otherwise, you get a simple list:
 
 ```['.autofsck', '.autorelabel', 'bin/', 'boot/', 'cgroup/']```
 
@@ -40,3 +38,12 @@ The return, being a simple list, allows for a fairly readable logic:
 if "cgroup/" in opts:
 	print "cgroup is done for!"
 ```
+
+
+### What's missing:
+
+Pretty much everything, but, this little routine is uncommonly handy in its current form. Elsewise:
+
+* Ability to resize window.
+* Page up/down keys.
+* Select / unselect all.

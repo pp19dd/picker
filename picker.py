@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+# hi, this routine isn't licensed. but credit would be nice somewhere.
+# See http://pp19dd.com/2013/11/simple-python-list-picker-using-curses/
+
 # usage:
 # opts = Picker(
 #    title = 'Delete all files',
