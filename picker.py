@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
-# hi, this routine isn't licensed. but credit would be nice somewhere.
-# See http://pp19dd.com/2013/11/simple-python-list-picker-using-curses/
+# This code is available for use under CC0 (Creative Commons 0 - universal). 
+# You can copy, modify, distribute and perform the work, even for commercial
+# purposes, all without asking permission. For more information, see LICENSE.md or 
+# https://creativecommons.org/publicdomain/zero/1.0/
 
 # usage:
 # opts = Picker(
