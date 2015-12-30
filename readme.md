@@ -47,3 +47,7 @@ Pretty much everything, but, this little routine is uncommonly handy in its curr
 * Ability to resize window.
 * Page up/down keys.
 * Select / unselect all.
+
+### License / Usage Rights:
+
+This code is available for use under CC0 (Creative Commons 0 - universal).  You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.  For more information, see LICENSE.md or https://creativecommons.org/publicdomain/zero/1.0/
