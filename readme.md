@@ -25,9 +25,9 @@ opts = Picker(
 ).getSelected()
 
 if opts == False:
-    print "Aborted!"
+    print( "Aborted!" )
 else:
-    print opts
+    print( opts )
 ```
 
 If the user hits cancel, the routine returns a ```False``` - otherwise, you get a simple list:
