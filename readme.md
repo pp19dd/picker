@@ -2,6 +2,8 @@ Are you writing a workhorse shell script in python? Why not curses?
 
 This class, using curses, lets a user select from a simple list of options. The return is a simple list of selected options, or False (for cancel). And, for the OCD in all of us, it preserves terminal window contents after exiting.
 
+Keys: `arrow up` / `arrow down` to navigate, `page up` / `page down`, `a` to toggle all entries, `enter` to accept, `q` to cancel.
+
 ![picker example](http://pp19dd.com/wp-content/uploads/2013/11/picker3.png "picker example")
 
 
@@ -42,11 +44,12 @@ if "cgroup/" in opts:
 
 ### What's missing:
 
-Pretty much everything, but, this little routine is uncommonly handy in its current form. Elsewise:
+Pretty much everything, so feel free to contribute so long as you don't break backward compatibility or majorly change the program's behavior.  So far I can think of the following items:
 
-* Ability to resize window.
-* Page up/down keys.
-* Select / unselect all.
+* Bug: resizing window glitches sometimes and doesn't redraw the screen exactly right.
+* Home / End keys might help.
+* ESC key to quit might help (for me the escape key and escape sequence fighting each other in curses confuses me and I'd rather pick other battles).
+* Event hooks for extending class easily (ex: autocomplete or hotkey)
 
 ### License / Usage Rights:
 
