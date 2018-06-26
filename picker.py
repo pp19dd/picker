@@ -15,7 +15,6 @@
 # cancel returns False
 
 import curses
-import curses.wrapper
 
 class Picker:
     """Allows you to select from a list with curses"""
