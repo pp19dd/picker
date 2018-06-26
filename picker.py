@@ -79,7 +79,7 @@ class Picker:
 
         ret_s = filter(lambda x: x["selected"], self.all_options)
         ret = map(lambda x: x["label"], ret_s)
-        return( ret )
+        return( list(ret) )
 
     def text(self, y, x, label):
         try:
@@ -222,7 +222,7 @@ class Picker:
             self.selected = self.cursor + self.offset
             
             temp = self.getSelected()
-            self.selcount = len(temp)
+            self.selcount = len(list(temp))
     
     def __init__(
         self, 
