@@ -1,6 +1,6 @@
 Are you writing a workhorse shell script in python? Why not curses?
 
-This class, using curses, lets a user select from a simple list of options. The return is a simple list of selected options, or False (for cancel). And, for the OCD in all of us, it preserves terminal window contents after exiting.
+This class, using curses, lets a user select from a simple list of options. The return is a simple list of selected options, or False (for cancel). And, for the OCD in all of us, it preserves terminal window contents after exiting.  Compatible and tested with python 2.7 and 3.5.
 
 Keys: `arrow up` / `arrow down` to navigate, `page up` / `page down`, `a` to toggle all entries, `enter` to accept, `q` to cancel.
 
